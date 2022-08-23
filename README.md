@@ -1,4 +1,3 @@
-sturmen.github.io
-=================
+Built with [Hugo](https://gohugo.io)
 
-personal homepage
+Themed with [Paper](https://themes.gohugo.io/themes/hugo-paper/)
