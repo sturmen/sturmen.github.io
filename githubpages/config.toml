@@ -1,0 +1,4 @@
+baseURL = 'https://sturmen.github.io/'
+languageCode = 'en-us'
+title = "Nicholas Tinsley's Homepage"
+theme = 'paper'

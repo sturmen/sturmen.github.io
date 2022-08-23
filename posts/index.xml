@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Nicholas Tinsley&#39;s Homepage</title>
+    <link>https://sturmen.github.io/posts/</link>
+    <description>Recent content in Posts on Nicholas Tinsley&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Aug 2022 10:51:01 -0400</lastBuildDate><atom:link href="https://sturmen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HDR Images in the Browser Using JPEG XL in 2022</title>
+      <link>https://sturmen.github.io/posts/hdr-jpeg-xl-2022/</link>
+      <pubDate>Tue, 23 Aug 2022 10:51:01 -0400</pubDate>
+      
+      <guid>https://sturmen.github.io/posts/hdr-jpeg-xl-2022/</guid>
+      <description>NOTE: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so My cat, Colby Jack
+tl;dr acquire a greated-than-sRGB source image, usually a camera raw file generate an OpenEXR image using Affinity Photo convert that OpenEXR image into a PQ-mapped PNG file convert that PNG file to a JPEG XL file enable JPEG-XL in Chrome profit!</description>
+    </item>
+    
+  </channel>
+</rss>
