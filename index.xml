@@ -6,15 +6,15 @@
     <description>Recent content on Nicholas Tinsley&#39;s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Aug 2022 10:51:01 -0400</lastBuildDate><atom:link href="https://sturmen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Aug 2022 10:30:00 -0400</lastBuildDate><atom:link href="https://sturmen.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>HDR Images in the Browser Using JPEG XL in 2022</title>
+      <title>HDR Images in the Browser Using JPEG XL in Q3 2022</title>
       <link>https://sturmen.github.io/posts/hdr-jpeg-xl-2022/</link>
-      <pubDate>Tue, 23 Aug 2022 10:51:01 -0400</pubDate>
+      <pubDate>Wed, 24 Aug 2022 10:30:00 -0400</pubDate>
       
       <guid>https://sturmen.github.io/posts/hdr-jpeg-xl-2022/</guid>
-      <description>NOTE: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so My cat, Colby Jack
-tl;dr acquire a greated-than-sRGB source image, usually a camera raw file generate an OpenEXR image using Affinity Photo convert that OpenEXR image into a PQ-mapped PNG file convert that PNG file to a JPEG XL file enable JPEG-XL in Chrome profit!</description>
+      <description>NOTE: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so My cat, Colby Jack. Will look bad on SDR displays.
+tl;dr acquire a greater-than-sRGB source image, usually a camera raw file generate an OpenEXR image using Affinity Photo convert that OpenEXR image into a PQ-mapped PNG file convert that PNG file to a JPEG XL file enable JPEG-XL in Chrome profit!</description>
     </item>
     
   </channel>
