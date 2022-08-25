@@ -5,7 +5,7 @@ date: 2022-08-24T10:30:00-04:00
 
 ***NOTE**: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so*
 ![an orange cat staring at the camera](cat.jxl)
-*My cat, Colby Jack. Will look bad on SDR displays.*
+*An HDR JPEG XL image of my cat, Colby Jack. Requires JPEG XL enabled in your browser, will not display otherwise. Will look bad on SDR displays.*
 
 ## tl;dr
 
