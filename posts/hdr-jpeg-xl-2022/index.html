@@ -109,7 +109,7 @@ tl;dr acquire a greater-than-sRGB source image, usually a camera raw file genera
 <meta itemprop="description" content="NOTE: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so My cat, Colby Jack. Will look bad on SDR displays.
 tl;dr acquire a greater-than-sRGB source image, usually a camera raw file generate an OpenEXR image using Affinity Photo convert that OpenEXR image into a PQ-mapped PNG file convert that PNG file to a JPEG XL file enable JPEG-XL in Chrome profit!"><meta itemprop="datePublished" content="2022-08-24T10:30:00-04:00" />
 <meta itemprop="dateModified" content="2022-08-24T10:30:00-04:00" />
-<meta itemprop="wordCount" content="670">
+<meta itemprop="wordCount" content="683">
 <meta itemprop="keywords" content="" />
   
   <meta name="twitter:card" content="summary"/>
@@ -232,6 +232,9 @@ tl;dr acquire a greater-than-sRGB source image, usually a camera raw file genera
 <ol>
 <li>
 <p>Set your MacBook to &ldquo;HDR Video (P3-ST 2084)&rdquo; in System Preferences in order to properly hit the 1000-nit peak brightness target. <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/monterey/macos-monterey-12-3-system-prefs-displays-multiple-presets-menu.png" alt="Apple screenshot of display preferences"></p>
+</li>
+<li>
+<p>Enable HDR/EDR preview by default in Affinity photo with <a href="https://affinity.help/photo/en-US.lproj/pages/Panels/32bitPanel.html">the 32-bit Preview Panel</a>.</p>
 </li>
 <li>
 <p>Follow this tutorial to develop your RAW photo into an HDR OpenEXR file: 

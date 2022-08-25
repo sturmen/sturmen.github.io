@@ -33,9 +33,12 @@ For an HDR photo to look good, you need an HDR source. The easiest way to do thi
 Next we need to turn that undeveloped RAW file into an image file. We also need to make sure that through the entire development process, we do not lose information as transform the bayer-patterned sensor data into a beutiful image. In order to do that, we need two things: a 32-bit floating point imaging pipeline, and a screen that can display it so we can visually confirm that the image looks as we want it to. By using Affinity Photo on a 2021 MacBook Pro with XDR display, we can have both. There are other options for hardware and software, but this is what I'll be using for the article (because that's what I have).
 
 1. Set your MacBook to "HDR Video (P3-ST 2084)" in System Preferences in order to properly hit the 1000-nit peak brightness target. ![Apple screenshot of display preferences](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/monterey/macos-monterey-12-3-system-prefs-displays-multiple-presets-menu.png)
-2. Follow this tutorial to develop your RAW photo into an HDR OpenEXR file: {{< youtube y86rUhitQGE >}}
 
-3. Export your photo from Affinity as an OpenEXR 32-bit float file.
+2. Enable HDR/EDR preview by default in Affinity photo with [the 32-bit Preview Panel](https://affinity.help/photo/en-US.lproj/pages/Panels/32bitPanel.html).
+
+3. Follow this tutorial to develop your RAW photo into an HDR OpenEXR file: {{< youtube y86rUhitQGE >}}
+
+4. Export your photo from Affinity as an OpenEXR 32-bit float file.
 
 ### Encoding
 
