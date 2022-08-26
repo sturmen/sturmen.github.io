@@ -39,7 +39,7 @@
   
   <meta name="theme-color" />
   
-  <meta name="description" content="NOTE: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so An HDR JPEG XL image of my cat, Colby Jack. Requires JPEG XL enabled in your browser, will not display otherwise. Will look bad on SDR displays.
+  <meta name="description" content="NOTE: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so. An HDR JPEG XL image of my cat, Colby Jack. Requires JPEG XL enabled in your browser, will not display otherwise. Will look bad on SDR displays.
 tl;dr acquire a greater-than-sRGB source image, usually a camera raw file generate an OpenEXR image using Affinity Photo convert that OpenEXR image into a PQ-mapped PNG file convert that PNG file to a JPEG XL file enable JPEG-XL in Chrome profit!" />
   <meta name="author" content="" />
   
@@ -96,7 +96,7 @@ tl;dr acquire a greater-than-sRGB source image, usually a camera raw file genera
   
   
   <meta property="og:title" content="HDR Images in the Browser Using JPEG XL in Q3 2022" />
-<meta property="og:description" content="NOTE: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so An HDR JPEG XL image of my cat, Colby Jack. Requires JPEG XL enabled in your browser, will not display otherwise. Will look bad on SDR displays.
+<meta property="og:description" content="NOTE: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so. An HDR JPEG XL image of my cat, Colby Jack. Requires JPEG XL enabled in your browser, will not display otherwise. Will look bad on SDR displays.
 tl;dr acquire a greater-than-sRGB source image, usually a camera raw file generate an OpenEXR image using Affinity Photo convert that OpenEXR image into a PQ-mapped PNG file convert that PNG file to a JPEG XL file enable JPEG-XL in Chrome profit!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sturmen.github.io/posts/hdr-jpeg-xl-2022/" /><meta property="article:section" content="posts" />
@@ -106,15 +106,15 @@ tl;dr acquire a greater-than-sRGB source image, usually a camera raw file genera
 
   
   <meta itemprop="name" content="HDR Images in the Browser Using JPEG XL in Q3 2022">
-<meta itemprop="description" content="NOTE: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so An HDR JPEG XL image of my cat, Colby Jack. Requires JPEG XL enabled in your browser, will not display otherwise. Will look bad on SDR displays.
+<meta itemprop="description" content="NOTE: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so. An HDR JPEG XL image of my cat, Colby Jack. Requires JPEG XL enabled in your browser, will not display otherwise. Will look bad on SDR displays.
 tl;dr acquire a greater-than-sRGB source image, usually a camera raw file generate an OpenEXR image using Affinity Photo convert that OpenEXR image into a PQ-mapped PNG file convert that PNG file to a JPEG XL file enable JPEG-XL in Chrome profit!"><meta itemprop="datePublished" content="2022-08-24T10:30:00-04:00" />
 <meta itemprop="dateModified" content="2022-08-24T10:30:00-04:00" />
-<meta itemprop="wordCount" content="700">
+<meta itemprop="wordCount" content="699">
 <meta itemprop="keywords" content="" />
   
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="HDR Images in the Browser Using JPEG XL in Q3 2022"/>
-<meta name="twitter:description" content="NOTE: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so An HDR JPEG XL image of my cat, Colby Jack. Requires JPEG XL enabled in your browser, will not display otherwise. Will look bad on SDR displays.
+<meta name="twitter:description" content="NOTE: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so. An HDR JPEG XL image of my cat, Colby Jack. Requires JPEG XL enabled in your browser, will not display otherwise. Will look bad on SDR displays.
 tl;dr acquire a greater-than-sRGB source image, usually a camera raw file generate an OpenEXR image using Affinity Photo convert that OpenEXR image into a PQ-mapped PNG file convert that PNG file to a JPEG XL file enable JPEG-XL in Chrome profit!"/>
 
   
@@ -206,7 +206,7 @@ tl;dr acquire a greater-than-sRGB source image, usually a camera raw file genera
     
   </header>
 
-  <section><p><em><strong>NOTE</strong>: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so</em>
+  <section><p><em><strong>NOTE</strong>: this is about displaying greater-than-sRGB still images on computer displays, not the bracketing postprocessing technique that has been popular over the last decade or so.</em>
 <img src="cat.jxl" alt="an orange cat staring at the camera">
 <em>An HDR JPEG XL image of my cat, Colby Jack. Requires JPEG XL enabled in your browser, will not display otherwise. Will look bad on SDR displays.</em></p>
 <h2 id="tldr">tl;dr</h2>
@@ -221,20 +221,20 @@ tl;dr acquire a greater-than-sRGB source image, usually a camera raw file genera
 <h2 id="requirements">Requirements</h2>
 <ul>
 <li>A source image with dynamic range greater than SDR</li>
-<li>A computer with an HDR display. I used a 2021 MacBook Pro 16&quot;</li>
+<li>A computer with an HDR display (I used a 2021 MacBook Pro 16&quot;)</li>
 <li>Familiarity with the command line, operating systems, and compiling open source software</li>
 </ul>
 <h2 id="steps">Steps</h2>
 <h3 id="capture">Capture</h3>
-<p>For an HDR photo to look good, you need an HDR source. The easiest way to do this is to capture a RAW photo. Basically any recent camera will do this, including smartphones. There are various proprietary manufacturer-specific formats for this (CR2, ARW, NEF, etc) but there&rsquo;s also the interoperable DNG format, which is what most (all?) smartphones will capture. Acquire a good photo in one of these formats.</p>
+<p>For an HDR photo to look good, you need an HDR source. The easiest way to do this is to capture a RAW photo. Basically any recent camera will do this, including smartphones. There are various proprietary manufacturer-specific formats for this (CR3, ARW, NEF, etc) but there&rsquo;s also the interoperable DNG format, which is what most (all?) smartphones will capture. Acquire a good photo in one of these formats.</p>
 <h3 id="artistic-expression">Artistic Expression</h3>
-<p>Next we need to turn that undeveloped RAW file into an image file. We also need to make sure that through the entire development process, we do not lose information as transform the bayer-patterned sensor data into a beutiful image. In order to do that, we need two things: a 32-bit floating point imaging pipeline, and a screen that can display it so we can visually confirm that the image looks as we want it to. By using Affinity Photo on a 2021 MacBook Pro with XDR display, we can have both. There are other options for hardware and software, but this is what I&rsquo;ll be using for the article (because that&rsquo;s what I have).</p>
+<p>Next we need to turn that undeveloped RAW file into an image file. We also need to make sure that through the entire development process, we do not lose information as transform the bayer-patterned sensor data into a beautiful image. In order to do that, we need two things: a 32-bit floating point imaging pipeline, and a screen that can display it so we can visually confirm that the image looks as we want it to. By using Affinity Photo on a 2021 MacBook Pro with XDR display, we can have both. There are other options for hardware and software, but this is what I&rsquo;ll be using for the article (because that&rsquo;s what I have).</p>
 <ol>
 <li>
 <p>Set your MacBook to &ldquo;HDR Video (P3-ST 2084)&rdquo; in System Preferences in order to properly hit the 1000-nit peak brightness target. <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/monterey/macos-monterey-12-3-system-prefs-displays-multiple-presets-menu.png" alt="Apple screenshot of display preferences"></p>
 </li>
 <li>
-<p>Enable HDR/EDR preview by default in Affinity photo with <a href="https://affinity.help/photo/en-US.lproj/pages/Panels/32bitPanel.html">the 32-bit Preview Panel</a>.</p>
+<p>Enable HDR/EDR preview by default in Affinity Photo with <a href="https://affinity.help/photo/en-US.lproj/pages/Panels/32bitPanel.html">the 32-bit Preview Panel</a>.</p>
 </li>
 <li>
 <p>Follow this tutorial to develop your RAW photo into an HDR OpenEXR file: 
@@ -248,7 +248,7 @@ tl;dr acquire a greater-than-sRGB source image, usually a camera raw file genera
 </li>
 </ol>
 <h3 id="encoding">Encoding</h3>
-<p>First and foremost: huge thanks to <a href="https://www.reddit.com/user/spider-mario/">Sami Boukortt</a> for writing the tool we&rsquo;re about to use here! I could not have done this without you!</p>
+<p><strong>First and foremost: huge thanks to <a href="https://www.reddit.com/user/spider-mario/">Sami Boukortt</a> for writing the tool we&rsquo;re about to use here! I could not have done this without you!</strong></p>
 <ol>
 <li>
 <p>Now we&rsquo;re going to compile and use the in-development JPEG XL tools. I&rsquo;m not sure if these build on macOS, I didn&rsquo;t try it. What I did do was open install Ubuntu on my Windows 11 computer. You can follow <a href="https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support">these instructions</a>.</p>
@@ -271,7 +271,7 @@ tl;dr acquire a greater-than-sRGB source image, usually a camera raw file genera
 </ol>
 <h3 id="viewing">Viewing</h3>
 <p>As of writing in late August 2022, JPEG XL is not enabled by default in Chrome. You can always see an up-to-date status report <a href="https://caniuse.com/jpegxl">here</a>, which also includes step by step instructions on how to enable the developer flag.</p>
-<p>Once enabled, you should be able to drag-n-drop the JXL file from Finder/Explorer into your Chrome window and bask in the glory of your new photo! Congratulations!</p>
+<p>Once enabled, you should be able to drag-n-drop the JXL file from Finder/Explorer into your Chrome window and bask in the glory of your new photo.</p>
 <h3 id="addendum">Addendum</h3>
 <ul>
 <li>
