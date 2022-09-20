@@ -36,7 +36,7 @@ Next we need to turn that undeveloped RAW file into an image file. We also need 
 
 2. Enable HDR/EDR preview by default in Affinity Photo with [the 32-bit Preview Panel](https://affinity.help/photo/en-US.lproj/pages/Panels/32bitPanel.html).
 
-3. Follow this tutorial to develop your RAW photo into an HDR OpenEXR file: {{< youtube y86rUhitQGE >}}
+3. Follow the first 3.5 minutes of this tutorial (ignore the tone mapping bit) to develop your RAW photo into an HDR OpenEXR file: {{< youtube y86rUhitQGE >}}
 
 4. Export your photo from Affinity as an OpenEXR 32-bit float file.
 
